@@ -1,7 +1,7 @@
 <template>
 <ul>
-    <li>
-
+    <li v-for="item in items">
+        <h2>{{ item.header}}</h2>
     </li>
 </ul>
 </template>
@@ -9,7 +9,7 @@
 <script>
 export default {
     props: {
-        title
+        items: Array
     }
 }
 

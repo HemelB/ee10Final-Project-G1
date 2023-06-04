@@ -27,13 +27,30 @@
         }
     }
     </script>
+
     
-    <style scoped>
-    nav{
-        background-color: pink;
-    }
-    ul{
-        list-style-type: none;
-        display: flex;
-    }
-    </style>
+<style scoped>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 59, 233);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(246, 240, 240);
+    display: inline-block;
+        
+}
+
+li{
+    margin: 0 2rem;
+}
+
+</style>

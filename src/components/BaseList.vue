@@ -1,16 +1,33 @@
 <template>
-<ul>
-    <li v-for="item in items">
-        <h2>{{ item.header}}</h2>
+  <ul>
+    <li v-for="item in items" @click="$router.push(item.to)">
+      <div class="left">
+        <div class="header">{{ item.header }}</div>
+        <div class="subtitle">{{ item.subtitle }}</div>
+      </div>
+
+      <div class="right">
+        {{ item.rightContent }}
+      </div>
     </li>
-</ul>
+  </ul>
 </template>
 
 <script>
 export default {
-    props: {
-        items: Array
-    }
+  props: {
+    items: Array,
+  },
+};
+</script>
+
+<style scoped>
+ul {
+  cursor: pointer;
 }
 
-</script>
+.header {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+</style>
